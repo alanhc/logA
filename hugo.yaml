@@ -22,7 +22,7 @@ menu:
       pageRef: /docs
       weight: 1
     - name: Blog
-      pageRef: /posts
+      pageRef: /blog
       weight: 2
     - name: CV ↗
       url: "http://alanhc.github.io/cv.pdf"
