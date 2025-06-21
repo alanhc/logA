@@ -1,17 +1,15 @@
 ---
-title: My Site
+title: alanhc's blog
 toc: false
 ---
 
-This is the landing page.
+Hello world!
 
 ## Explore
 
 {{< cards >}}
+  {{< card link="docs" title="Blog" icon="book-open" >}}
   {{< card link="docs" title="Docs" icon="book-open" >}}
   {{< card link="about" title="About" icon="user" >}}
 {{< /cards >}}
 
-## Documentation
-
-For more information, visit [Hextra](https://imfing.github.io/hextra).
