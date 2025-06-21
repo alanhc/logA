@@ -41,7 +41,7 @@ menu:
         icon: github
     - name: LinkedIn
       weight: 6
-      url: "https://twitter.com/"
+      url: "https://www.linkedin.com/in/alanhc316/"
       params:
         icon: linkedin
 
