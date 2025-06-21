@@ -1,5 +1,5 @@
 # Hugo configuration file
-title: My Site
+title: alanhc's blog
 
 # import hextra as module
 module:
@@ -21,11 +21,14 @@ menu:
     - name: Docs
       pageRef: /docs
       weight: 1
-    - name: About
-      pageRef: /about
+    - name: Blog
+      pageRef: /posts
       weight: 2
+    - name: CV ↗
+      url: "http://alanhc.github.io/cv.pdf"
+      weight: 2.5
     - name: Contact ↗
-      url: "https://github.com/imfing"
+      url: "mailto:alan.tseng.cs@gmail.com"
       weight: 3
     - name: Search
       weight: 4
@@ -33,14 +36,14 @@ menu:
         type: search
     - name: GitHub
       weight: 5
-      url: "https://github.com/imfing/hextra-starter-template"
+      url: "https://github.com/alanhc"
       params:
         icon: github
-    - name: Twitter
+    - name: LinkedIn
       weight: 6
       url: "https://twitter.com/"
       params:
-        icon: x-twitter
+        icon: linkedin
 
 params:
   navbar:
@@ -53,4 +56,4 @@ params:
 
   editURL:
     enable: true
-    base: "https://github.com/imfing/hextra-starter-template/edit/main/content"
+    base: "https://github.com/alanhc/logA/edit/main/content"
