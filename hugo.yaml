@@ -1,6 +1,22 @@
 # Hugo configuration file
 title: alanhc's blog
 
+enableRobotsTXT: true
+enableGitInfo: true
+outputs:
+  home: [HTML]
+  page: [HTML]
+  section: [HTML, RSS]
+# languages:
+#   tw:
+#     languageName: 中文
+#     weight: 1
+#   en:
+#     languageName: English
+#     weight: 2
+# services:
+#   googleAnalytics:
+#     ID: G-MEASUREMENT_ID
 # import hextra as module
 module:
   imports:
@@ -18,7 +34,10 @@ markup:
 
 menu:
   main:
-    
+    - name: Example Showcase
+      pageRef: /showcase
+      weight: 1.5
+      
     - name: Blog
       pageRef: /blog
       weight: 1
@@ -50,7 +69,24 @@ params:
   navbar:
     displayTitle: true
     displayLogo: false
+  
+  blog:
+    list:
+      displayTags: true
+      # date | lastmod | publishDate | title | weight
+      sortBy: date
+      sortOrder: desc # or "asc"
 
+    article:
+      displayPagination: true
+      
+  toc:
+    displayTags: true
+  highlight:
+  copy:
+    enable: true
+    # hover | always
+    display: hover
   footer:
     displayCopyright: true
     displayPoweredBy: false
@@ -59,3 +95,6 @@ params:
   editURL:
     enable: true
     base: "https://github.com/alanhc/logA/edit/main/content"
+
+taxonomies:
+  author: authors

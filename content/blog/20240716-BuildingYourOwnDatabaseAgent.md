@@ -4,6 +4,7 @@ date: 2024-07-16
 tags:
   - llm
 updated: 2024-07-16
+draft: false
 up:
 ---
 **Building Your Own Database Agent**
