@@ -18,12 +18,13 @@ markup:
 
 menu:
   main:
-    - name: Docs
-      pageRef: /docs
-      weight: 1
+    
     - name: Blog
       pageRef: /blog
-      weight: 2
+      weight: 1
+    - name: Home ↗
+      url: "https://alanhc.github.io"
+      weight: 1.5
     - name: CV ↗
       url: "http://alanhc.github.io/cv.pdf"
       weight: 2.5
@@ -51,8 +52,9 @@ params:
     displayLogo: false
 
   footer:
-    displayCopyright: false
-    displayPoweredBy: true
+    displayCopyright: true
+    displayPoweredBy: false
+    
 
   editURL:
     enable: true
