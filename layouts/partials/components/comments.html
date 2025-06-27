@@ -1,6 +1,18 @@
-{{/* Hextra ➜ Disqus */}}
-{{- /* 僅在 shortname 存在、且文章沒關掉 comments 時才載入 */ -}}
-{{- $sn := .Site.Config.Services.Disqus.Shortname | default "" -}}
+{{- $sn := .Site.Config.Services.Disqus.Shortname -}}
 {{- if and $sn (ne .Params.comments false) -}}
-  {{ template "_internal/disqus.html" . }}
+  {{/* 強制正式 URL，避免 localhost 產生錯誤 Thread */}}
+  {{- $url := printf "%s%s" (site.BaseURL) .RelPermalink -}}
+  <div id="disqus_thread"></div>
+  <script>
+    var disqus_config = function () {
+      this.page.url        = "{{ $url }}";
+      this.page.identifier = "{{ .RelPermalink }}";
+    };
+    (function () {
+      var d=document,s=d.createElement('script'); s.async=true;
+      s.src='https://{{ $sn }}.disqus.com/embed.js';
+      (d.head||d.body).appendChild(s);
+    })();
+  </script>
+  <noscript>請啟用 JavaScript 以檢視 Disqus 留言。</noscript>
 {{- end -}}
