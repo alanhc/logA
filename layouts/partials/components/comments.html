@@ -1,0 +1,6 @@
+{{/* Hextra ➜ Disqus */}}
+{{- /* 僅在 shortname 存在、且文章沒關掉 comments 時才載入 */ -}}
+{{- $sn := .Site.Config.Services.Disqus.Shortname | default "" -}}
+{{- if and $sn (ne .Params.comments false) -}}
+  {{ template "_internal/disqus.html" . }}
+{{- end -}}

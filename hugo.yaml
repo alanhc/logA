@@ -34,10 +34,9 @@ markup:
 
 menu:
   main:
-    - name: Example Showcase
-      pageRef: /showcase
+    - name: Projects
+      pageRef: /projects
       weight: 1.5
-      
     - name: Blog
       pageRef: /blog
       weight: 1
@@ -98,3 +97,7 @@ params:
 
 taxonomies:
   author: authors
+
+services:
+  disqus:
+    shortname: alanhc316

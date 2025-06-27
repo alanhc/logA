@@ -1,6 +1,7 @@
 ---
 title: alanhc's blog
-toc: false
+toc: true
+description: "Alan's blog"
 ---
 
 Hello world!
@@ -13,4 +14,15 @@ Hello world!
   {{< card link="docs" title="Docs" icon="book-open" >}}
   {{< card link="about" title="About" icon="user" >}}
 {{< /cards >}}
+
+## Projects
+
+{{< cards >}}
+  {{< card link="projects" title="Projects" icon="cog" >}}
+  {{< card link="showcase" title="Showcase" icon="star" >}}
+{{< /cards >}}
+
+## Contact
+
+test
 
