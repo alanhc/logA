@@ -1,6 +1,8 @@
 # Hugo configuration file
 title: alanhc's blog
-baseURL: https://alanhc.github.io/til/
+baseURL: https://alanhc.github.io/logA/
+
+
 
 enableRobotsTXT: true
 enableGitInfo: true
