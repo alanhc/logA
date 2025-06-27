@@ -1,6 +1,6 @@
 # Hugo configuration file
 title: alanhc's blog
-baseURL: "https://alanhc.github.io/" 
+baseURL: https://alanhc.github.io/
 
 enableRobotsTXT: true
 enableGitInfo: true
@@ -101,4 +101,4 @@ taxonomies:
 
 services:
   disqus:
-    shortname: "alanhc316"
+    shortname: alanhc316
