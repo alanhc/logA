@@ -1,28 +1,36 @@
 ---
-title: alanhc's blog
+title: AlanHC's Blog
 toc: true
-description: "Alan's blog"
+description: "Alan's personal tech blog"
 ---
 
-Hello world!
+Welcome to my blog!
 
 ## Explore
 
 {{< cards >}}
   {{< card link="blog" title="Blog" icon="book-open" >}}
-  {{< card link="https://alanhc.github.io/til/" title="TIL" icon="book-open" >}}
-  {{< card link="docs" title="Docs" icon="book-open" >}}
+  {{< card link="https://alanhc.github.io/til/" title="TIL">}}
+  {{< card link="docs" title="Docs"  >}}
   {{< card link="about" title="About" icon="user" >}}
 {{< /cards >}}
 
-## Projects
+## Selected Projects
 
 {{< cards >}}
-  {{< card link="projects" title="Projects" icon="cog" >}}
-  {{< card link="showcase" title="Showcase" icon="star" >}}
+  {{< card
+        link=""
+        title="test"
+        image="https://github.com/"
+        imageStyle="object-fit:cover; aspect-ratio:16/9;"
+  >}}
+
 {{< /cards >}}
 
-## Contact
+## Talks
 
-test
+### 2025
 
+| Date | Title                                   | Where           | 
+|------|-----------------------------------------|-----------------|
+| 2025 | Using GDB Debug in OpenBMC              | COSCUP - Taiwan | 
